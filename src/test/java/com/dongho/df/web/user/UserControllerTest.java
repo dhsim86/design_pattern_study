@@ -25,9 +25,6 @@ public class UserControllerTest {
     @Autowired
     private FixtureConfig fixtureConfig;
 
-    @Autowired
-    private UserController userController;
-
     @MockBean
     private UserApplicationService userApplicationService;
 
