@@ -42,8 +42,7 @@ public class UserApplicationServiceTest {
 
         then: {
             StepVerifier.create(userFlux)
-                .expectNext(fixtureConfig.getUserList().get(0))
-                .expectNext(fixtureConfig.getUserList().get(1))
+                .expectNext(fixtureConfig.getUserList().toArray(new User[]{}))
                 .verifyComplete();
         }
 
