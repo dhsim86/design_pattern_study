@@ -2,9 +2,11 @@ package com.dongho.df.config;
 
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.event.EventListener;
 
 @Configuration
+@Profile("!test")
 public class H2Config {
 
     private org.h2.tools.Server webServer;
